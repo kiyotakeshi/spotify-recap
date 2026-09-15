@@ -146,6 +146,7 @@ def main() -> None:
   </header>
   <article class="albums" id="y{e(year)}-albums">
     <h3>アルバム Top {e(album_limit)}</h3>
+    <div class="table-wrap">
     <table>
       <thead>
         <tr>
@@ -156,10 +157,12 @@ def main() -> None:
         {album_rows(block.get('albums') or [])}
       </tbody>
     </table>
+    </div>
   </article>
   <div class="grid">
     <article id="y{e(year)}-tracks">
       <h3>曲 Top {e(track_limit)}</h3>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -170,9 +173,11 @@ def main() -> None:
           {track_rows(block['tracks'], album_urls_by_key)}
         </tbody>
       </table>
+      </div>
     </article>
     <article id="y{e(year)}-artists">
       <h3>アーティスト Top {e(artist_limit)}</h3>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -183,6 +188,7 @@ def main() -> None:
           {artist_rows(block['artists'])}
         </tbody>
       </table>
+      </div>
     </article>
   </div>
 </section>
@@ -324,8 +330,14 @@ def main() -> None:
       text-transform: uppercase;
       color: var(--accent);
     }}
+    .table-wrap {{
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
+    }}
     table {{
-      width: 100%;
+      width: max-content;
+      min-width: 100%;
       border-collapse: collapse;
       font-size: 13px;
     }}
@@ -334,6 +346,7 @@ def main() -> None:
       text-align: left;
       vertical-align: top;
       border-bottom: 1px solid var(--line);
+      white-space: nowrap;
     }}
     th {{
       color: var(--muted);

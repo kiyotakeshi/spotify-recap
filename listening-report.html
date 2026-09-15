@@ -132,8 +132,14 @@
       text-transform: uppercase;
       color: var(--accent);
     }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
+    }
     table {
-      width: 100%;
+      width: max-content;
+      min-width: 100%;
       border-collapse: collapse;
       font-size: 13px;
     }
@@ -142,6 +148,7 @@
       text-align: left;
       vertical-align: top;
       border-bottom: 1px solid var(--line);
+      white-space: nowrap;
     }
     th {
       color: var(--muted);
@@ -220,7 +227,7 @@
   </header>
   <article class="albums" id="y2017-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -258,12 +265,12 @@
 <tr><td class='rank'>29</td><td class='num'>6</td><td class='time'>0:08:27</td><td class='num'>1</td><td>The Chainsmokers</td><td class='title'><a href='https://open.spotify.com/album/0rSLgV8p5FzfnqlEk4GzxE' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Closer</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>6</td><td class='time'>0:06:43</td><td class='num'>1</td><td>Lil Pump</td><td class='title'><a href='https://open.spotify.com/album/2VVvm4zJlUQm9XmBCvGN6z' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Lil Pump</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2017-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -321,11 +328,11 @@
 <tr><td class='rank'>49</td><td class='num'>3</td><td class='time'>0:06:54</td><td>The Chainsmokers</td><td class='title'><a href='https://open.spotify.com/track/6GeD5g9vZTz25Egf8kxoIY' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Last Day Alive</a></td><td class='muted'><a href='https://open.spotify.com/album/4JPguzRps3kuWDD5GS6oXr' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Memories...Do Not Open</a></td></tr>
 <tr><td class='rank'>50</td><td class='num'>3</td><td class='time'>0:06:42</td><td>Selena Gomez</td><td class='title'><a href='https://open.spotify.com/track/7EmGUiUaOSGDnUUQUDrOXC' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Wolves</a></td><td class='muted'>Wolves</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2017-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -383,7 +390,7 @@
 <tr><td class='rank'>49</td><td class='num'>2</td><td class='time'>0:04:44</td><td class='num'>2</td><td class='title'>The fin.</td></tr>
 <tr><td class='rank'>50</td><td class='num'>2</td><td class='time'>0:03:22</td><td class='num'>1</td><td class='title'>Rita Ora</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -403,7 +410,7 @@
   </header>
   <article class="albums" id="y2018-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -441,12 +448,12 @@
 <tr><td class='rank'>29</td><td class='num'>17</td><td class='time'>1:15:02</td><td class='num'>10</td><td>Kinokoteikoku</td><td class='title'><a href='https://open.spotify.com/album/42G6RaP6sG7YOPYSyOFkkK' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>猫とアレルギー</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>17</td><td class='time'>1:12:05</td><td class='num'>8</td><td>WEDNESDAY CAMPANELLA</td><td class='title'><a href='https://open.spotify.com/album/0yJek8GDNLRe6jdRyfft2T' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>ガラパゴス</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2018-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -504,11 +511,11 @@
 <tr><td class='rank'>49</td><td class='num'>5</td><td class='time'>0:21:38</td><td>Sakura Fujiwara</td><td class='title'><a href='https://open.spotify.com/track/7nq9fkctKub9nIIqDKpRhi' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>The Moon</a></td><td class='muted'>The Moon</td></tr>
 <tr><td class='rank'>50</td><td class='num'>5</td><td class='time'>0:20:34</td><td>Post Malone</td><td class='title'><a href='https://open.spotify.com/track/09IOPhEh1OMe0HD9b36FJk' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Over Now</a></td><td class='muted'><a href='https://open.spotify.com/album/6trNtQUgC8cgbWcqoMYkOR' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>beerbongs &amp; bentleys</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2018-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -566,7 +573,7 @@
 <tr><td class='rank'>49</td><td class='num'>11</td><td class='time'>0:35:39</td><td class='num'>10</td><td class='title'>Zara Larsson</td></tr>
 <tr><td class='rank'>50</td><td class='num'>10</td><td class='time'>0:39:02</td><td class='num'>7</td><td class='title'>Coldplay</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -586,7 +593,7 @@
   </header>
   <article class="albums" id="y2019-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -624,12 +631,12 @@
 <tr><td class='rank'>29</td><td class='num'>59</td><td class='time'>3:23:01</td><td class='num'>20</td><td>Taylor Swift</td><td class='title'><a href='https://open.spotify.com/album/3Mvk2LKxfhc2KVSnDYC40I' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Fearless</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>58</td><td class='time'>3:03:23</td><td class='num'>18</td><td>Future</td><td class='title'><a href='https://open.spotify.com/album/14RoCAD59B09OB9EJUpuZY' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>DS2 - Deluxe</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2019-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -687,11 +694,11 @@
 <tr><td class='rank'>49</td><td class='num'>14</td><td class='time'>0:46:01</td><td>Ryofu Karuma</td><td class='title'><a href='https://open.spotify.com/track/6bUqJqyfTXcYe3oMaxH3Qc' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>YEN TOWN</a></td><td class='muted'><a href='https://open.spotify.com/album/4BVPnyxDQuL6ZZiqUgTnDy' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>The Cool Core</a></td></tr>
 <tr><td class='rank'>50</td><td class='num'>14</td><td class='time'>0:43:45</td><td>ヒプノシスマイク -D.R.B- (どついたれ本舗)</td><td class='title'><a href='https://open.spotify.com/track/5fyv8ggkDjaDgyTFiI7kSw' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>FACES</a></td><td class='muted'><a href='https://open.spotify.com/album/1vgwIdCgqnRbyqeZq1D9nX' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>あゝオオサカdreamin&#x27;night</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2019-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -749,7 +756,7 @@
 <tr><td class='rank'>49</td><td class='num'>58</td><td class='time'>3:21:03</td><td class='num'>31</td><td class='title'>Kendrick Lamar</td></tr>
 <tr><td class='rank'>50</td><td class='num'>58</td><td class='time'>3:03:23</td><td class='num'>18</td><td class='title'>Future</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -769,7 +776,7 @@
   </header>
   <article class="albums" id="y2020-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -807,12 +814,12 @@
 <tr><td class='rank'>29</td><td class='num'>90</td><td class='time'>3:49:27</td><td class='num'>18</td><td>Kid Cudi</td><td class='title'><a href='https://open.spotify.com/album/64nbgEEIcY4g1ElVLONJ0w' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Man On The Moon III: The Chosen</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>89</td><td class='time'>5:42:32</td><td class='num'>3</td><td>ALKALOID/天城 一彩(CV.梶原 岳人)、白鳥 藍良(CV.天﨑 滉平)、礼瀬 マヨイ(CV.重松 千晴)、風早 巽(CV.中澤 まさとも)</td><td class='title'><a href='https://open.spotify.com/album/6nBym9midy0B0Dzkltz56L' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>あんさんぶるスターズ！！ ユニットソングCD ALKALOID</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2020-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -870,11 +877,11 @@
 <tr><td class='rank'>49</td><td class='num'>26</td><td class='time'>1:24:47</td><td>KREVA</td><td class='title'><a href='https://open.spotify.com/track/6veS2XCA0VQjE5jyAKM2XN' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>想い出の向こう側</a></td><td class='muted'>嘘と煩悩</td></tr>
 <tr><td class='rank'>50</td><td class='num'>26</td><td class='time'>1:02:07</td><td>SZA</td><td class='title'><a href='https://open.spotify.com/track/5wTVNpi5WDByxBgKgUE6MU' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Supermodel</a></td><td class='muted'><a href='https://open.spotify.com/album/76290XdXVF9rPzGdNRWdCh' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Ctrl</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2020-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -932,7 +939,7 @@
 <tr><td class='rank'>49</td><td class='num'>80</td><td class='time'>3:31:24</td><td class='num'>19</td><td class='title'>KID FRESINO</td></tr>
 <tr><td class='rank'>50</td><td class='num'>80</td><td class='time'>3:13:18</td><td class='num'>11</td><td class='title'>PUNPEE</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -952,7 +959,7 @@
   </header>
   <article class="albums" id="y2021-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -990,12 +997,12 @@
 <tr><td class='rank'>29</td><td class='num'>98</td><td class='time'>6:06:15</td><td class='num'>18</td><td>Phoebe Bridgers</td><td class='title'><a href='https://open.spotify.com/album/0AkAmg94XyiHODJaiGHh9O' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Stranger in the Alps</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>97</td><td class='time'>5:32:14</td><td class='num'>16</td><td>Anderson .Paak</td><td class='title'><a href='https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Malibu</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2021-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -1053,11 +1060,11 @@
 <tr><td class='rank'>49</td><td class='num'>18</td><td class='time'>1:33:42</td><td>ヒプノシスマイク -D.R.B- (Bad Ass Temple)</td><td class='title'><a href='https://open.spotify.com/track/4ssDwh7HBBayufzI1cGp1L' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Light &amp; Shadow</a></td><td class='muted'>ヒプノシスマイク -Division Rap Battle- 2nd D.R.B『Bad Ass Temple VS 麻天狼』</td></tr>
 <tr><td class='rank'>50</td><td class='num'>18</td><td class='time'>1:06:36</td><td>ヨルシカ</td><td class='title'><a href='https://open.spotify.com/track/5j7ixaLeGTGSv4DzKs0pCM' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>だから僕は音楽を辞めた</a></td><td class='muted'><a href='https://open.spotify.com/album/4b9nOSXSf1LROzgfYFxdxI' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>だから僕は音楽を辞めた</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2021-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -1115,7 +1122,7 @@
 <tr><td class='rank'>49</td><td class='num'>76</td><td class='time'>3:14:51</td><td class='num'>15</td><td class='title'>Halsey</td></tr>
 <tr><td class='rank'>50</td><td class='num'>75</td><td class='time'>3:17:47</td><td class='num'>20</td><td class='title'>Lil Peep</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -1135,7 +1142,7 @@
   </header>
   <article class="albums" id="y2022-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -1173,12 +1180,12 @@
 <tr><td class='rank'>29</td><td class='num'>101</td><td class='time'>3:56:23</td><td class='num'>18</td><td>JPEGMAFIA</td><td class='title'><a href='https://open.spotify.com/album/4inXqcdjG79gV4m2mU8dQh' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>LP!</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>95</td><td class='time'>4:13:11</td><td class='num'>16</td><td>Future</td><td class='title'><a href='https://open.spotify.com/album/6tE9Dnp2zInFij4jKssysL' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>I NEVER LIKED YOU</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2022-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -1236,11 +1243,11 @@
 <tr><td class='rank'>49</td><td class='num'>15</td><td class='time'>1:12:48</td><td>Drake</td><td class='title'><a href='https://open.spotify.com/track/4FIgHqXd4KkOwxrGeLDYM2' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Texts Go Green</a></td><td class='muted'><a href='https://open.spotify.com/album/3cf4iSSKd8ffTncbtKljXw' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Honestly, Nevermind</a></td></tr>
 <tr><td class='rank'>50</td><td class='num'>15</td><td class='time'>1:03:18</td><td>Beyoncé</td><td class='title'><a href='https://open.spotify.com/track/4DByEumlGTZKSzuVEZ35eo' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>PURE/HONEY</a></td><td class='muted'><a href='https://open.spotify.com/album/6FJxoadUE4JNVwWHghBwnb' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>RENAISSANCE</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2022-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -1298,7 +1305,7 @@
 <tr><td class='rank'>49</td><td class='num'>89</td><td class='time'>5:05:48</td><td class='num'>65</td><td class='title'>Eminem</td></tr>
 <tr><td class='rank'>50</td><td class='num'>75</td><td class='time'>5:02:13</td><td class='num'>10</td><td class='title'>Tsukino Mito</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -1318,7 +1325,7 @@
   </header>
   <article class="albums" id="y2023-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -1356,12 +1363,12 @@
 <tr><td class='rank'>29</td><td class='num'>93</td><td class='time'>4:15:52</td><td class='num'>17</td><td>Post Malone</td><td class='title'><a href='https://open.spotify.com/album/6r1lh7fHMB499vGKtIyJLy' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>AUSTIN</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>93</td><td class='time'>2:23:32</td><td class='num'>15</td><td>Earl Sweatshirt</td><td class='title'><a href='https://open.spotify.com/album/66at85wgO2pu5CccvqUF6i' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Some Rap Songs</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2023-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -1419,11 +1426,11 @@
 <tr><td class='rank'>49</td><td class='num'>21</td><td class='time'>1:02:18</td><td>Drake</td><td class='title'><a href='https://open.spotify.com/track/3eP13S8D5m2cweMEg3ZDed' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Virginia Beach</a></td><td class='muted'><a href='https://open.spotify.com/album/4czdORdCWP9umpbhFXK2fW' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>For All The Dogs</a></td></tr>
 <tr><td class='rank'>50</td><td class='num'>21</td><td class='time'>0:54:22</td><td>Travis Scott</td><td class='title'><a href='https://open.spotify.com/track/7EiUtdeoWcKqLi5ELZCjYf' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>LOST FOREVER (feat. Westside Gunn)</a></td><td class='muted'><a href='https://open.spotify.com/album/18NOKLkZETa4sWwLMIm0UZ' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>UTOPIA</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2023-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -1481,7 +1488,7 @@
 <tr><td class='rank'>49</td><td class='num'>81</td><td class='time'>3:50:09</td><td class='num'>16</td><td class='title'>Metro Boomin</td></tr>
 <tr><td class='rank'>50</td><td class='num'>74</td><td class='time'>5:40:52</td><td class='num'>24</td><td class='title'>Frédéric Chopin</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -1501,7 +1508,7 @@
   </header>
   <article class="albums" id="y2024-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -1539,12 +1546,12 @@
 <tr><td class='rank'>29</td><td class='num'>93</td><td class='time'>4:54:08</td><td class='num'>19</td><td>Eminem</td><td class='title'><a href='https://open.spotify.com/album/3kjHLu1pL7tdY88GFwEkl6' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>The Death of Slim Shady (Coup De Grâce)</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>92</td><td class='time'>5:56:36</td><td class='num'>10</td><td>FINNEAS</td><td class='title'><a href='https://open.spotify.com/album/7swV2ssDdlKc89h1DxUNh7' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>For Cryin&#x27; Out Loud!</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2024-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -1602,11 +1609,11 @@
 <tr><td class='rank'>49</td><td class='num'>16</td><td class='time'>0:55:09</td><td>Kendrick Lamar</td><td class='title'><a href='https://open.spotify.com/track/0aB0v4027ukVziUGwVGYpG' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>tv off (feat. lefty gunplay)</a></td><td class='muted'><a href='https://open.spotify.com/album/0hvT3yIEysuuvkK73vgdcW' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>GNX</a></td></tr>
 <tr><td class='rank'>50</td><td class='num'>16</td><td class='time'>0:50:26</td><td>Future</td><td class='title'><a href='https://open.spotify.com/track/57ELn9TPDIhrpl0dasS465' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Claustrophobic</a></td><td class='muted'><a href='https://open.spotify.com/album/4iqbFIdGOTzXeDtt9owjQn' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>WE DON&#x27;T TRUST YOU</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2024-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -1664,7 +1671,7 @@
 <tr><td class='rank'>49</td><td class='num'>54</td><td class='time'>3:20:15</td><td class='num'>10</td><td class='title'>James Blake</td></tr>
 <tr><td class='rank'>50</td><td class='num'>53</td><td class='time'>2:05:00</td><td class='num'>17</td><td class='title'>Thundercat</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -1684,7 +1691,7 @@
   </header>
   <article class="albums" id="y2025-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -1722,12 +1729,12 @@
 <tr><td class='rank'>29</td><td class='num'>62</td><td class='time'>3:34:01</td><td class='num'>11</td><td>J. Cole</td><td class='title'><a href='https://open.spotify.com/album/57wh3BpvUF2tmvwoGSjUe3' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Might Delete Later</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>62</td><td class='time'>3:17:08</td><td class='num'>14</td><td>PARTYNEXTDOOR</td><td class='title'><a href='https://open.spotify.com/album/6Rl6YoCarF2GHPSQmmFjuR' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>$ome $exy $ongs 4 U</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2025-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -1785,11 +1792,11 @@
 <tr><td class='rank'>49</td><td class='num'>15</td><td class='time'>0:41:14</td><td>Playboi Carti</td><td class='title'><a href='https://open.spotify.com/track/0rNgWFQJtfttOYIHfDOHCg' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>BACKD00R (feat. Kendrick Lamar &amp; Jhené Aiko)</a></td><td class='muted'><a href='https://open.spotify.com/album/0fSfkmx0tdPqFYkJuNX74a' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>MUSIC</a></td></tr>
 <tr><td class='rank'>50</td><td class='num'>15</td><td class='time'>0:40:11</td><td>Tyler, The Creator</td><td class='title'><a href='https://open.spotify.com/track/4UddKz4WBKn5b9tDB6tq2L' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Tell Me What It Is</a></td><td class='muted'><a href='https://open.spotify.com/album/1jzv3jwZbt8lYfEtMjiD1R' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>DON&#x27;T TAP THE GLASS</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2025-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -1847,7 +1854,7 @@
 <tr><td class='rank'>49</td><td class='num'>22</td><td class='time'>1:37:27</td><td class='num'>9</td><td class='title'>Joanne Robertson</td></tr>
 <tr><td class='rank'>50</td><td class='num'>22</td><td class='time'>1:25:31</td><td class='num'>9</td><td class='title'>Massive Attack</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
@@ -1867,7 +1874,7 @@
   </header>
   <article class="albums" id="y2026-albums">
     <h3>アルバム Top 30</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead>
         <tr>
           <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th><th>アルバム</th>
@@ -1905,12 +1912,12 @@
 <tr><td class='rank'>29</td><td class='num'>42</td><td class='time'>2:06:35</td><td class='num'>14</td><td>Björk</td><td class='title'><a href='https://open.spotify.com/album/1OBctVHKbHrQ2t5oCeHNtN' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Medúlla</a></td></tr>
 <tr><td class='rank'>30</td><td class='num'>41</td><td class='time'>2:41:39</td><td class='num'>9</td><td>Fujii Kaze</td><td class='title'><a href='https://open.spotify.com/album/6ELurkxQnAif7u5Vv6Wly9' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Prema</a></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </article>
   <div class="grid">
     <article id="y2026-tracks">
       <h3>曲 Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>アーティスト</th><th>曲</th><th>アルバム</th>
@@ -1968,11 +1975,11 @@
 <tr><td class='rank'>49</td><td class='num'>11</td><td class='time'>0:36:38</td><td>A$AP Rocky</td><td class='title'><a href='https://open.spotify.com/track/2lSDVBIWbWQ7z5Lw15GRNw' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>STOP SNITCHING</a></td><td class='muted'><a href='https://open.spotify.com/album/4itKk52E9ZCdWUQcFAkud9' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>Don&#x27;t Be Dumb</a></td></tr>
 <tr><td class='rank'>50</td><td class='num'>11</td><td class='time'>0:34:29</td><td>Akiko Yano</td><td class='title'><a href='https://open.spotify.com/track/37SI0TRACWzNHZG2GwNQ8Z' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>待ちくたびれて</a></td><td class='muted'><a href='https://open.spotify.com/album/5JWgopHJztjb7pB5fFBIbh' target='_blank' rel='noopener noreferrer' title='Spotify で開く'>いろはにこんぺいとう</a></td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
     <article id="y2026-artists">
       <h3>アーティスト Top 50</h3>
-      <table>
+      <div class="table-wrap"><table>
         <thead>
           <tr>
             <th>#</th><th>回</th><th>時間</th><th>曲数</th><th>アーティスト</th>
@@ -2030,7 +2037,7 @@
 <tr><td class='rank'>49</td><td class='num'>15</td><td class='time'>0:41:42</td><td class='num'>9</td><td class='title'>Baby Keem</td></tr>
 <tr><td class='rank'>50</td><td class='num'>14</td><td class='time'>0:00:37</td><td class='num'>1</td><td class='title'>Gliiico</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </article>
   </div>
 </section>
