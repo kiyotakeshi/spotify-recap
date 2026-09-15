@@ -4,6 +4,8 @@ Extended Streaming History を年ごとに集計し、曲・アーティスト�
 
 このリポジトリの `Streaming_History_Audio_*.json` は **各 100 件のサンプル**。本番の全件は手元に置き、レポート生成は全件に対して行う。
 
+公開ページ: https://kiyotakeshi.github.io/spotify-recap/
+
 ## 事前準備
 
 入力は Spotify アカウントの **長期ストリーミング履歴**（Extended Streaming History）である。過去 1 年分だけ入っている「アカウントのデータ」では足りない。
