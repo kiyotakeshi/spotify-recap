@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.sample
+.spotify-album-cache.json
+__pycache__/
+*.pyc
+.DS_Store
